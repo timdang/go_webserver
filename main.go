@@ -26,6 +26,6 @@ func main() {
 		}
 		fmt.Fprintf(w, "Hello from func main")
 	})
-
+	fmt.Println("Serving from port 8080")
 	fmt.Println(http.ListenAndServe(":8080", nil))
 }
